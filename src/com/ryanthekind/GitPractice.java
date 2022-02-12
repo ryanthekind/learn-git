@@ -38,6 +38,14 @@ public class GitPractice {
 			System.out.println("sorry, too high.");
 		}
 		
+		System.out.println("what's your favorite number?");
+		String theirFavNo = scanner.nextLine();
+		
+		int theirInput = Integer.parseInt(theirFavNo);
+		
+		System.out.println(theirInput);
+		
+		
 		scanner.close();
 		
 	}
