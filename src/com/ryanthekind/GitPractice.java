@@ -1,5 +1,7 @@
 package com.ryanthekind;
 
+import java.util.Scanner;
+
 public class GitPractice {
 
 	/*
@@ -8,11 +10,43 @@ public class GitPractice {
 	 */
 	public static void main(String[] args) {
 
-		System.out.println("I am making changes to my code!");
+		// System.out.println("I am making changes to my code!");
 		
+		/*
 		for(int count = 0; count <= 5; count++) {
-			System.out.println(count);
+			System.out.print
+		*/
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Can you guess my favorite number between 1 - 10?");
+		String input = scanner.nextLine();
+		
+		int guess = Integer.parseInt(input);
+		
+		
+		if(guess < 0 || guess > 10) {
+			System.out.println("sorry invalid number please try again.");
 		}
+		else if(guess == 5) {
+			System.out.println("You guessed my favorite number 5!");
+		}
+		else if(guess < 5) {
+			System.out.println("ah too low");
+		}
+		else {
+			System.out.println("sorry, too high.");
+		}
+		
+		System.out.println("what's your favorite number?");
+		String theirFavNo = scanner.nextLine();
+		
+		int theirInput = Integer.parseInt(theirFavNo);
+		
+		System.out.println(theirInput);
+		
+		
+		scanner.close();
 		
 	}
 
